@@ -1,3 +1,8 @@
+body {
+  font: 100% Verdana, sans-serif;
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
 .navbar-light {
   margin: 0px auto;
   padding: 0px 0px;
@@ -18,10 +23,45 @@
   font-size: auto;
   color: #ffffff;
   margin: 0px auto;
+  padding: 10px 0px; }
+  .footer h4 {
+    color: #ffffff; }
+  .footer .imgFooter {
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding: 5px 5px;
+    border-radius: 10px; }
+
+#whatIs #mission {
+  margin: 0px auto;
   padding: 20px 0px; }
 
-.imgFooter {
-  background-color: #ffffff;
+.row-header {
   margin: 0px auto;
-  padding: 5px 5px;
-  border-radius: 10px; }
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px solid #ddd;
+  min-height: 250px; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 0px 0px;
+  background-color: #ffffff;
+  color: #000000; }
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+h1, h2 {
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9b2065;
+  margin: 0px auto;
+  padding: 10px 0px; }

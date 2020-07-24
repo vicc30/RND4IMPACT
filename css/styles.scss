@@ -2,6 +2,7 @@ $color-white: #ffffff;
 $color-main: #9b2065;
 $color-blue: #2b50aa;
 $color-yellow: #e6af2e;
+$lt-gray: #ddd;
 $font-stack: Verdana, sans-serif;
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
@@ -13,6 +14,12 @@ $font-stack: Verdana, sans-serif;
 	font: 100% $font-stack;
 	font-size: $size;
 	color: $color;
+}
+
+body {
+	font: 100% $font-stack;
+	padding:50px 0px 0px 0px;
+    z-index:0;
 }
 
 .navbar-light {
@@ -29,11 +36,52 @@ $font-stack: Verdana, sans-serif;
 .footer {
 	background-color: $color-main;
 	@include fonts(auto, $color-white);
-	@include zero-margin(20px, 0px);
+	@include zero-margin(10px, 0px);
+
+	h4 {
+		color:$color-white;
+	}
+
+	.imgFooter {
+		background-color: $color-white;
+		@include zero-margin(5px, 5px);
+		border-radius: 10px;
+	}
 }
 
-.imgFooter {
-	background-color: $color-white;
-	@include zero-margin(5px, 5px);
-	border-radius: 10px;
+#whatIs #mission {
+	@include zero-margin(20px, 0px)
+}
+
+
+.row-header{
+    @include zero-margin(0px,0px);
+}
+
+.row-content {
+    @include zero-margin(50px,0px);
+    border-bottom: 1px solid $lt-gray;
+    min-height:250px;
+}
+
+.jumbotron {
+    @include zero-margin(0px,0px);
+    background-color: $color-white ;
+	color: #000000;
+}
+
+.tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:$color-main;
+	@include zero-margin(10px, 0px)
 }
