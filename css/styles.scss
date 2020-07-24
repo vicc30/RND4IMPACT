@@ -1,4 +1,39 @@
+$color-white: #ffffff;
+$color-main: #9b2065;
+$color-blue: #2b50aa;
+$color-yellow: #e6af2e;
+$font-stack: Verdana, sans-serif;
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
+}
+
+@mixin fonts($size, $color) {
+	font: 100% $font-stack;
+	font-size: $size;
+	color: $color;
+}
+
+.navbar-light {
+	@include zero-margin(0px, 0px);
+	@include fonts(auto, $color-main);
+	background-color: $color-white;
+}
+
+#donateButton {
+	background-color: $color-main;
+	@include fonts(auto, $color-white);
+}
+
+.footer {
+	background-color: $color-main;
+	@include fonts(auto, $color-white);
+	@include zero-margin(20px, 0px);
+}
+
+.imgFooter {
+	background-color: $color-white;
+	@include zero-margin(5px, 5px);
+	border-radius: 10px;
 }

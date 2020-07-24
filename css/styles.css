@@ -1,4 +1,27 @@
-.row-header {
+.navbar-light {
   margin: 0px auto;
   padding: 0px 0px;
-  color: #ddd; }
+  font: 100% Verdana, sans-serif;
+  font-size: auto;
+  color: #9b2065;
+  background-color: #ffffff; }
+
+#donateButton {
+  background-color: #9b2065;
+  font: 100% Verdana, sans-serif;
+  font-size: auto;
+  color: #ffffff; }
+
+.footer {
+  background-color: #9b2065;
+  font: 100% Verdana, sans-serif;
+  font-size: auto;
+  color: #ffffff;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.imgFooter {
+  background-color: #ffffff;
+  margin: 0px auto;
+  padding: 5px 5px;
+  border-radius: 10px; }
