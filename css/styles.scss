@@ -47,6 +47,9 @@ body {
 		@include zero-margin(5px, 5px);
 		border-radius: 10px;
 	}
+	.btn-social-icon {
+		margin: 15px;
+	}
 }
 
 #whatIs #mission {
@@ -84,4 +87,15 @@ h1, h2 {
 h1, h2, h3, h4, h5, h6{
 	color:$color-main;
 	@include zero-margin(10px, 0px)
+}
+
+#graph {
+		display: grid;
+		margin: auto;
+		position: center;
+		border: var($color-blue) 2px;
+		height: 1000px;
+		width: 500px; 
+		grid-template-rows: repeat(56, 1fr); /*creates the rows sized --row-size*/
+		grid-template-columns: repeat(24, 1fr); /*creates the column sized --column-size*/
 }

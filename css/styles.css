@@ -31,6 +31,8 @@ body {
     margin: 0px auto;
     padding: 5px 5px;
     border-radius: 10px; }
+  .footer .btn-social-icon {
+    margin: 15px; }
 
 #whatIs #mission {
   margin: 0px auto;
