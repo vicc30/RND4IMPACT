@@ -11,6 +11,8 @@ RND4IMPACT INC. is a 501(c)(3) scientific research organization that focuses bro
 - [Aung Khant Nyar]
 - [Victor Cruz Galindo](https://github.com/vicc30)
 - [Kyle Cabanayan]
+- [Natalia Sumali]
+- [Mamata Nichat]
 - [Summer Song]
 
 All rights reserved RND4IMPACT INC.
