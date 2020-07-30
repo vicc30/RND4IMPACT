@@ -23,6 +23,7 @@
   "homepage": "https://github.com/vicc30/RND4IMPACT#readme",
   "devDependencies": {
     "browser-sync": "^2.26.10",
+    "chart.js": "^2.9.3",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
