@@ -78,7 +78,79 @@
                             <p>Let's talk... call us to <a href="tel:+(408) 217-2591"><i class="fa fa-phone-square"></i> +(408) 217-2591</a></p>
                         </div>
                         <div class="tab-pane fade" id="list-message" role="tabpanel" aria-labelledby="list-message-list">
-                            <p><a href="#contact"><i class="fa fa-comment"></i> Click here </a> to send a message</p>
+                            <p><a role="button" id="contactButton"><i class="fa fa-comment"></i> Click here </a> to send a message</p>
+                        </div>
+                        <!--Starts modal-->
+                        <div class="modal fade" id="contactModal" role="dialog">
+                            <div class="modal-dialog modal-lg" role="content">
+                                <!--modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Contact us</h4>
+                                        <button type="button" class="close" id="closeContact">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" id="firstname" name="firstname"
+                                                    placeholder="First Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" id="lastname" name="lastname"
+                                                    placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lastname" class="col-md-2 col-form-label">Email</label>
+                                                <div class="col-md-8">
+                                                    <input type="email" class="form-control" id="email" name="email"
+                                                    placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="phone" class="col-md-2 col-form-label">Phone number</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" id="phone" name="phone"
+                                                    placeholder="Phone number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="area" class="col-md-2 col-form-label">Area of interest</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" id="area" name="area"
+                                                    placeholder="Area of interest">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="start" class="col-md-2 col-form-label">Available start date</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" id="start" name="start"
+                                                    placeholder="Available start date">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="comment" class="col-md-2 col-form-label">Comments</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" id="comment" name="comment"
+                                                    rows="10" placeholder="Type your message here..."></textarea>
+                                                </div>
+                                            </div>
+                                            <!--Send and cancel button-->
+                                            <div class="form-group row">
+                                                <div class="offset-md-2 col-md-10">
+                                                    <button type="button" class="btn btn-secondary ml-auto" id="cancelContact">Cancel</button><!-- data-dismiss="modal"-->
+                                                    <button type="submit" class="btn btn-success ml-1">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -89,71 +161,6 @@
             <h2><i class="fa fa-map-marker"></i> Our location</h2>
             <div class="col col-12 text-center">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.3242176033264!2d-122.03852058524836!3d37.38216417983284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6578faae615%3A0x784edd3e107f7441!2s640%20W%20California%20Ave%2C%20Sunnyvale%2C%20CA%2094086%2C%20EE.%20UU.!5e0!3m2!1ses!2smx!4v1595969934968!5m2!1ses!2smx" width="80%" height="370" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </div>
-        <div class="row row-content" id="contact">
-            <div class="col col-12">
-                <h2>Contact Us for Volunteer Information or Opportunities</h2>
-                <p>Feel free to contact us for further information</p>
-            </div>
-            <div class="col col-12 col-md-9">
-                <!--Init contact us form-->
-                <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="firstname" name="firstname"
-                            placeholder="First Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="lastname" name="lastname"
-                            placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-8">
-                            <input type="email" class="form-control" id="email" name="email"
-                            placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="phone" class="col-md-2 col-form-label">Phone number</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="phone" name="phone"
-                            placeholder="Phone number">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="area" class="col-md-2 col-form-label">Area of interest</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="area" name="area"
-                            placeholder="Area of interest">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="start" class="col-md-2 col-form-label">Available start date</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="start" name="start"
-                            placeholder="Available start date">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="comment" class="col-md-2 col-form-label">Comments</label>
-                        <div class="col-md-8">
-                            <textarea class="form-control" id="comment" name="comment"
-                            rows="10" placeholder="Type your message here..."></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-8">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
