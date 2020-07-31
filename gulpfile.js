@@ -14,12 +14,12 @@ var gulp = require('gulp'),
 
 // Clean
 gulp.task('clean', function () {
-    return del(['dist']);
+    return del(['docs']);
 });
 
 gulp.task('copyfonts', function () {
     return gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
-        .pipe(gulp.dest('./dist/fonts'));
+        .pipe(gulp.dest('./docs/fonts'));
 });
 
 
@@ -27,7 +27,7 @@ gulp.task('copyfonts', function () {
 gulp.task('imagemin', function () {
    return gulp.src('img/*.{png,jpg,gif}')
        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-       .pipe(gulp.dest('dist/img'));
+       .pipe(gulp.dest('docs/img'));
 });
 
 gulp.task('sass', function () {
@@ -48,7 +48,7 @@ gulp.task('usemin', function () {
                    inlinecss: [cleanCss(), 'concat']
                }))
        }))
-       .pipe(gulp.dest('dist/'));
+       .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('build', gulp.series('clean', gulp.parallel('copyfonts','imagemin','usemin')));
