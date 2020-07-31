@@ -206,3 +206,13 @@ h1, h2, h3, h4, h5, h6{
 .light {
 	color:$color-blue-light;
 }
+
+.modal-header {
+	background-color: $color-main;
+	.modal-title {
+		color: white;
+	}
+	.close {
+		color:white;
+	}
+}

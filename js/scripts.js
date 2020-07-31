@@ -1,3 +1,19 @@
+
+//This is for contact modal
+    //shows up form when clicked
+
+    $('#contactButton').click(function(){
+        $('#contactModal').modal('show');
+    });
+       //button for cancel login
+       $('#cancelContact').click(function(){
+        $('#contactModal').modal("hide");
+    });
+    //button for close
+    $('#closeContact').click(function(){
+        $('#contactModal').modal("hide");
+    });
+
 $(document).ready(function(){
     $("#myCarousel").carousel( { interval: 2000 } );
     $("#carouselButton").click(function(){

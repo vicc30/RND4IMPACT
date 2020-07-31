@@ -150,3 +150,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .light {
   color: #20679D; }
+
+.modal-header {
+  background-color: #9b2065; }
+  .modal-header .modal-title {
+    color: white; }
+  .modal-header .close {
+    color: white; }
